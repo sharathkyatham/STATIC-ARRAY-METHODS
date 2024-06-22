@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+body{
+  background-image: url(./images/circle\ gif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee-container {
+  color: #000;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: aliceblue;
+  border-radius: 30px 0px 30px 0px;
+}
+
+.marquee-content{
+  display: inline-block;
+  padding: 10px;
+  color: #0b1522;
+  font-size: 18px;
+  animation: marqueeAnimation 20s linear infinite;
+}
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+span {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 1.1em;
+  letter-spacing: 20px;
+  background: linear-gradient(60deg,red,orange,green,blue);
+  color: rgba(255, 255, 255, 0.99);
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid grey;
+  border-radius: 10px 150px/160px;
+  backdrop-filter: blur(15px);
+  padding: 10px;
+  margin-top: 100px;
+  margin-inline: 1px;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 1.1rem;
+  background: linear-gradient(60deg,red,green,blue);
+  color: rgba(255, 255, 255, 0.99);
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+}
+button:hover{
+  color: lightblue;
+}
